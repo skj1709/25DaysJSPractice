@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create new dom element</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .parent {
+      height: 100vh;
+      width: 100%;
+      background-color: black;
+    }
+  </style>
+  <body>
+    <div class="parent"></div>
+  </body>
+  <script>
+    const parent = document.getElementsByClassName("parent");
+    const newElement = document.createElement("p");
+    newElement.textContent = "This is new p created using dom";
+    newElement.style.color = "white";
+    parent[0].appendChild(newElement);
+    console.log("code done");
+  </script>
+</html>
