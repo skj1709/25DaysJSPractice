@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM Learning</title>
+  </head>
+  <body>
+    <div class="parent">
+      <p class="title">Dom Manipulate karoge?</p>
+      <button onclick="handleClick()">Yes</button>
+    </div>
+  </body>
+
+  <script>
+    function handleClick() {
+      document.getElementsByClassName("title")[0].textContent =
+        "Kar diya dom manipulate!!";
+    }
+  </script>
+</html>
