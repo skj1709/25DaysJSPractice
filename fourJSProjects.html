@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 JS Projects</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <h1>Color Changer</h1>
+    <button id="blue" onclick="change('blue')">Blue</button>
+    <button id="black" onclick="change('black')">Black</button>
+    <button id="red" onclick="change('red')">Red</button>
+    <button id="baige" onclick="change('beige')">Beige</button>
+  </body>
+  <script>
+    function change(color) {
+      const body = document.querySelector("body");
+      body.style.backgroundColor = color;
+    }
+  </script>
+</html>
